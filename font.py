@@ -18,9 +18,9 @@ for d in data['providers']:
     try:
         for char in d['chars']:
             symbols.append(char)
-        paths.append(d['file'])
-        heights.append(d['height'])
-        ascents.append(d['ascent'])
+            paths.append(d['file'])
+            heights.append(d['height'])
+            ascents.append(d['ascent'])
     except:
         continue
 
