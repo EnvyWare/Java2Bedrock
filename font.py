@@ -16,7 +16,8 @@ heights = []
 ascents = []
 for d in data['providers']:
     try:
-        symbols.append(d['chars'])
+        for char in d['chars']:
+            symbols.append(char)
         paths.append(d['file'])
         heights.append(d['height'])
         ascents.append(d['ascent'])
